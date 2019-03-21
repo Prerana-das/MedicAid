@@ -1,0 +1,454 @@
+/*===========================================
+    CSS INDEX
+    =========================================
+
+    1. Common CSS
+    2. helper classes
+    3. header area css 
+    4. header promo area css
+    5. about area css
+    6. service area css
+    7. team area css
+    8. portfolio area css
+    9. contact area css
+    10. footer area css
+    11. about page css
+    12. service page css
+    13. team page css
+    14. work page css
+    15. contact page css
+   
+	*/
+/*--------------------------
+ 1. Common css
+ ----------------------------*/
+*{
+	padding:0;
+	margin:0;
+}
+a,a:hover {
+  text-decoration:none;
+  font-weight: 400;
+  color:#546092;
+}
+
+html,
+body {
+  color:#546092;
+  line-height:26px;
+  font-weight: 400;
+  font-size:15px;
+ font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 600;
+   color: #404040;
+}
+ul {
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+p{
+	color:#404040;
+	font-size:15px;
+	line-height:30px;
+}
+
+/*--------------------------
+ 2. helper classes 
+ ----------------------------*/
+.mb-80{
+	margin-bottom:80px;
+}
+.mt-20{
+	margin-top:20px;
+}
+a.border-btn{
+	border:1px solid #38d39f;
+	padding:15px 50px;
+	font-size:15px;
+	position:relative;
+	background-color:#fff;
+	transition:.5s;
+	display: inline-block;
+}
+a.border-btn::before {
+	position: absolute;
+	content: "";
+	border: 1px solid #38d39f;
+	left: 6px;
+	width: 100%;
+	height: 100%;
+	bottom: -6px;
+	z-index: -1;
+}
+a.border-btn:hover{
+	background-color:#38d39f;
+	color:#fff;
+}
+.section-title {
+    position:  relative;
+	margin-bottom:30px;
+}
+.section-title p{
+    font-size:18px;
+}
+.section-title h1 {
+	font-size: 38px;
+	line-height: 57.42px;
+}
+.section-title h2{
+	font-size:35px;
+	font-weight:400;
+	position:relative;
+}
+.section-title h2::before{
+	position:absolute;
+	content:"";
+	width:124px;
+	height:1px;
+	background-color:#38d39f;
+	bottom:-6px;
+	left:0;
+}
+.section-title h2::after {
+	position: absolute;
+	content: "";
+	width: 124px;
+	height: 1px;
+	background-color: #38d39f;
+	bottom: -15px;
+	left: 28px;
+}
+.toggle-menu{
+	display:none;
+}
+.scroll-top{
+	width:40px; 
+	height:40px; 
+	line-height:40px;
+	text-align:center; 
+	background-color:#006FED;
+	color:#fff;
+	text-decoration: none;
+	position:fixed;
+	top:320px;
+	right:30px;
+	display:none;
+	transition:.5s;
+	border-radius:1px;
+	z-index:3;
+}
+.scroll-top:hover{
+	color:#fff;
+	opacity:.8;
+}
+
+/*--------------------------
+ 3. header area css 
+ ----------------------------*/
+#mainNav{
+	padding:15px 0px;
+	background-color:#fff;
+}
+.logo {
+	margin-top: 10px;
+}
+.logo a{}
+.main-menu{}
+.navbar-collapse{}
+.nav-list{}
+.nav-list li{
+	display: inline-block;
+}
+.nav-list li a {
+	display: inline-block;
+	padding: 10px 18px;
+	color:#546092;
+	transition:.5s;
+}
+.nav-list li a:hover{
+	color:#006FED;
+}
+.main-menu li > a.current {
+	color: #006FED;
+}
+.login {
+	float:right;
+	display: inline-block;
+	padding: 10px 0px;
+}
+.login span i{
+	padding-right:7px;
+	padding-left:5px;
+}
+.haeder-social ul li {
+	display: inline-block;
+	padding: 10px 2px;
+}
+.haeder-social ul li a {
+	margin-right: 11px;
+}
+
+.banner-area{
+	padding:100px 0px;
+	background-image:url('assets/img/back.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center;
+	height:80vh;
+	position:relative;
+	z-index:2;
+}
+.top-banner{
+	margin-bottom:100px;
+	width: 100%;
+}
+.top-banner h1 {
+	text-align: center;
+	font-size: 50px;
+}
+.banner {
+	background-color: #ddd;
+	padding: 60px 20px;
+}
+.banner-area span{
+	
+}
+.banner-area select {
+	width: 62%;
+	padding: 10px;
+	border: 1px solid #dadada;
+	margin-left: 10px;
+}
+.banner-search{
+	position:relative;
+}
+.banner-search i {
+	padding: 10px;
+	background-color: #006FED;
+	color: #fff;
+	height: 100%;
+	position: absolute;
+	line-height: auto;
+	width: 44px;
+	text-align: center;
+	line-height: 30px;
+}
+.banner-area input {
+	width: 70%;
+	padding: 10px;
+	border-radius: 2px;
+	border: 1px solid #dadada;
+	
+}
+.banner-area button{
+	padding:10px 50px;
+}
+
+
+
+/* testimonial css_____________________*/
+.testimonial{
+	padding:50px 0px;
+	background-image:url('../img/perellex-02.jpg');
+	background-size:cover;
+	background-position:center;
+}
+.single_clint{
+	color:#fff;
+}
+.clint_img{
+	width:100px;
+	margin:0 auto;
+}
+.clint_img img{}
+.clint_content{}
+.clint_content h3{
+	text-transform:uppercase;
+	margin:10px 0px 5px 0px;
+}
+.clint_content h6{
+	color:#80B435;
+	font-size:15px;
+	font-weight:300;
+}
+.clint_content p{
+	color:#ddd;
+}
+.clint_content i{
+	color:#80B435;
+}
+
+/*--------------------------
+ 7. team area css 
+ ----------------------------*/
+.highlighted-area{
+	padding:70px 0px;
+}
+.highlighted{}
+.highlighted-item{
+	text-align:center;
+}
+.highlighted-img {
+}
+.highlighted-img img{
+	height:100%;
+}
+.highlighted-cont{
+	padding:0px 20px;
+}
+.highlighted-cont a {
+	padding: 8px 25px;
+	text-align: center;
+	background-color: #006FED;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 5px;
+	display: inline-block;
+}
+.highlighted-slider .owl-nav div {
+	border: 1px solid #777;
+	color:#777;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius:1px;
+	text-align: center;
+	right: auto;
+	position: absolute;
+	left: -20px;
+	top: 50%;
+}
+.highlighted-slider .owl-nav div.owl-next{
+	left:auto;
+	right:0;
+}
+
+
+.post-area{
+	padding:50px 0px;
+}
+.single-post{
+	background-color:#F1F0F0;
+	margin-bottom:30px;
+}
+.post-img{
+	height:250px;
+	border:1px solid #F1F0F0;
+}
+.post-img img{
+	height:100%;
+	width:100%;
+}
+.post-content{
+	padding:15px 20px;
+}
+.post-content h4{
+	text-transform:uppercase;
+}
+.post-content p{
+	margin:20px 0px 25px 0px;
+}
+.post-content a{
+	z-index:0;
+}
+
+
+.post-add-area{
+	padding:100px 0px;
+	background-color:#F1F0F0;
+}
+.post-add-area h2{
+	margin-bottom:20px;
+}
+.post-add-area button{
+	padding:10px 40px;
+}
+
+
+/*--------------------------
+ . footer area css 
+ ----------------------------*/
+.footer-area{
+}
+.footer-top{
+	padding:30px 0px;
+	background-color:#fff;
+}
+.footer-col{}
+.footer-col h3{
+	margin-bottom:20px;
+	font-size:20px;
+}
+.footer-col p{}
+.footer-social{}
+.footer-social ul li,.newsletter ul li,.gallery-social ul li{
+	display:inline-block;
+}
+.footer-social ul li a i,.newsletter ul li a i,.gallery-social ul li a i{
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	margin-right: 4px;
+}
+.footer-social ul li:nth-child(1) a i, .newsletter ul li:nth-child(1) a i,.gallery-social ul li:nth-child(1) a i{
+	background-color:#3b5998;
+}
+.footer-social ul li:nth-child(2) a i,.newsletter ul li:nth-child(2) a i,.gallery-social ul li:nth-child(2) a i{
+	background-color:#0084b4;
+}
+.footer-social ul li:nth-child(3) a i,.newsletter ul li:nth-child(3) a i,.gallery-social ul li:nth-child(3) a i{
+	background-color:#007bb6;
+}
+.footer-social ul li:nth-child(4) a i,.newsletter ul li:nth-child(4) a i,.gallery-social ul li:nth-child(4) a i{
+	background-color:#4cb4f7;
+}
+.footer-social ul li:nth-child(5) a i,.newsletter ul li:nth-child(5) a i,.gallery-social ul li:nth-child(5) a i{
+	background-color:#ff0000;
+}
+.footer-col ul li a{}
+.footer-blog img{
+	width:60px;
+	height:60px;
+}
+.footer-col input{
+	padding:8px 25px;
+	border-radius:30px;
+	width: 100%;
+}
+.footer-col input[type="email"]{
+	margin-bottom:10px;
+	border:1px solid #AAAABE;
+}
+.footer-col input[type="submit"]{
+	border:1px solid #006FED;
+	background-color:#006FED;
+	color:#fff;
+}
+.footer-bottom{
+	padding:10px 0px;
+}
+.footer-copyright{}
+.footer-copyright p {
+	margin-top: 10px;
+}
+.footer-copyright p i{
+	color:red;
+}
+
