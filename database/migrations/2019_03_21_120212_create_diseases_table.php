@@ -27,6 +27,8 @@ class CreateDiseasesTable extends Migration
 
              $table->unsignedBigInteger('symptomID')->index()->nullable();
             $table->foreign('symptomID')->references('symptomID')->on('symptoms')->onDelete('cascade')->onUpdate('No Action');
+
+            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
             $table->timestamps();
         });
     }

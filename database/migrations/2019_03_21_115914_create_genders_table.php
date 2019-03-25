@@ -20,6 +20,8 @@ class CreateGendersTable extends Migration
               $table->unsignedBigInteger('ageID')->index()->nullable();
             $table->foreign('ageID')->references('ageID')->on('ages')->onDelete('cascade')->onUpdate('No Action');
             
+            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
+            
             $table->timestamps();
         });
     }

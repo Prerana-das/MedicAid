@@ -452,3 +452,72 @@ a.border-btn:hover{
 	color:red;
 }
 
+
+/*-----------------------------------------
+ .admin panel css
+ ------------------------------------------*/
+.admin-header{
+	background-color:#fff;
+	padding:10px 0px;
+	border-bottom:1px solid #26A69A;
+}
+.admin-area{
+	background-color:#f5f5f5;
+}
+.admin-logo a {
+	padding: 0px 10px;
+}
+.admin-info {
+	padding: 0px 34px 0px 0px;
+}
+.admin-info h3 {
+	margin-left: 8px;
+	display: inline-block;
+	font-size: 15px;
+}
+.admin-info i {
+	color: #ddd;
+	background-color: #696969;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 10px;
+}
+.admin-area .col-lg-2{
+	padding-left:0px;
+}
+.admin-sidebar {
+	border-top:2px solid #ebebeb;
+	background-color: #222D32;
+	height: 91vh;
+}
+.admin-sidebar ul{}
+.admin-sidebar ul li:first-child{
+	font-weight:800;
+	background-color: #26A69A;
+}
+.admin-sidebar ul li {
+	padding: 14px 25px;
+	color: #ebebeb;
+	font-size: 14px;
+	border-bottom: 1px solid #ebebeb;
+	transition:.5s;
+}
+.admin-sidebar ul li a{
+	color: #ebebeb;
+	font-weight:800;
+}
+.admin-sidebar ul li:hover{
+	background-color: #26A69A;
+	border-bottom: 1px solid #26A69A;
+}
+.admin-content {
+	width: 100%;
+	background-color: #fff;
+	margin: 20px;
+	padding: 20px;
+	border-top:1px solid #26A69A;
+}
+
+

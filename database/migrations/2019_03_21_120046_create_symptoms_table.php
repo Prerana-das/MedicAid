@@ -16,6 +16,8 @@ class CreateSymptomsTable extends Migration
         Schema::create('symptoms', function (Blueprint $table) {
             $table->bigIncrements('symptomID');
             $table->string('symptom_name',200);
+
+            $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
             $table->timestamps();
         });
     }
