@@ -23,7 +23,11 @@
                                     <input type="text" placeholder="Description"name="disease_description" class="form-control" >
 
                                     <label>Tag</label>
-                                    <input type="text" placeholder="Tag"name="disease_tag" class="form-control" >
+                                    <input type="text" placeholder="Tag"name="sym1" class="form-control" >
+                                    <input type="text" placeholder="Tag"name="sym2" class="form-control" >
+                                    <input type="text" placeholder="Tag"name="sym3" class="form-control" >
+                                    <input type="text" placeholder="Tag"name="sym4" class="form-control" >
+
                                     <label>Tips</label>
                                     <input type="text" placeholder="Tips" name="tips" class="form-control" >
                                 </div>

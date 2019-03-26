@@ -17,7 +17,7 @@ class CreateDiseasesTable extends Migration
             $table->bigIncrements('diseaseID');
             $table->string('disease_name',200);
             $table->text('disease_description');
-            $table->text('disease_tag');
+            $table->text('disease_tag')->nullable();
             $table->text('tips');
              $table->unsignedBigInteger('ageID')->index()->nullable();
             $table->foreign('ageID')->references('ageID')->on('ages')->onDelete('cascade')->onUpdate('No Action');

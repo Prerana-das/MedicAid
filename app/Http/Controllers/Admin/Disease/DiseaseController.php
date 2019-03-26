@@ -19,7 +19,10 @@ class DiseaseController extends Controller
         $table->diseaseID= $request->diseaseID;
         $table->disease_name = $request->disease_name;
         $table->disease_description = $request->disease_description;
-        $table->disease_tag = $request->disease_tag;
+
+        $data = $request->only('sym1','sym2','sym3','sym4');
+        $table['disease_tag'] = json_encode($data);
+
         $table->tips = $request->tips;
         $table->save();
 
