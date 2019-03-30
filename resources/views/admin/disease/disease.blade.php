@@ -21,6 +21,8 @@
                         <th scope="col">Description</th>
                          <th scope="col">Tag</th>
                          <th scope="col">Tips</th>
+                         <th scope="col">Age</th>
+                         <th scope="col">Gender</th>
                         <th class="text-right" scope="col">Action</th>
                     </tr>
                     </thead>
@@ -31,7 +33,9 @@
                         <td>{{$row->disease_name}}</td>
                         <td>{{$row->disease_description}}</td>
                         <td>{{$row->disease_tag}}</td>
-                         <td>{{$row->tips}}</td>
+                        <td>{{$row->tips}}</td>
+                        <td>{{$row->ages['age']}}</td>
+                        <td>{{$row->genders['gender_name']}}</td>
                         <td class="text-right">
                             <!-- Button trigger modal -->
                            <a type="button" class="btn btn-sm btn-success ediBtn" data-diseaseID="{{$row->diseaseID}}" data-disease_name="{{$row->disease_name}}" data-disease_description="{{$row->disease_description}}" 

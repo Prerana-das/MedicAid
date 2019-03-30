@@ -23,13 +23,51 @@
                                     <input type="text" placeholder="Description"name="disease_description" class="form-control" >
 
                                     <label>Tag</label>
-                                    <input type="text" placeholder="Tag"name="sym1" class="form-control" >
+                                   <!-- <input type="text" placeholder="Tag"name="sym1" class="form-control" >
                                     <input type="text" placeholder="Tag"name="sym2" class="form-control" >
                                     <input type="text" placeholder="Tag"name="sym3" class="form-control" >
-                                    <input type="text" placeholder="Tag"name="sym4" class="form-control" >
+                                    <input type="text" placeholder="Tag"name="sym4" class="form-control" >-->
+                                        <div class="col-md-12">
+
+                              <select class="mdb-select colorful-select dropdown-primary md-form" name="disease_tag[]" multiple searchable="Search here..">
+
+                                <option value="" disabled selected>Choose your Symptom</option>
+                                  @foreach($symptoms as $row)
+                                        <option value="{{$row->symptomID}}">{{$row->symptom_name}} 
+                                        </option>
+                                    @endforeach
+                              </select>
+    
+
+                            </div>
+                                    
 
                                     <label>Tips</label>
                                     <input type="text" placeholder="Tips" name="tips" class="form-control" >
+
+                                     <!--<label>Select Symptom</label>
+                                        <select name="symptomID" required="">
+                                        <option value="">Select a country</option>
+                                        @foreach($symptoms as $row)
+                                        <option value="{{$row->symptomID}}">{{$row->symptom_name}}</option>
+                                        @endforeach
+                                        </select>-->
+
+                                        <label>Select Age</label>
+                                        <select name="ageID" required="">
+                                        <option value="">Select a age</option>
+                                        @foreach($ages as $row)
+                                        <option value="{{$row->ageID}}">{{$row->age}}</option>
+                                        @endforeach
+                                        </select>
+                        
+                                        <label>Select Gender</label>
+                                        <select name="genderID" required="">
+                                        <option value="">Select Gender</option>
+                                        @foreach($genders as $row)
+                                        <option value="{{$row->genderID}}">{{$row->gender_name}}</option>
+                                        @endforeach
+                                        </select>
                                 </div>
                             </div>
                         </div>
