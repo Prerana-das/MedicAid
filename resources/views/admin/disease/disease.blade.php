@@ -34,7 +34,9 @@
                          <td>{{$row->tips}}</td>
                         <td class="text-right">
                             <!-- Button trigger modal -->
-                            <a href="">
+                           <a type="button" class="btn btn-sm btn-success ediBtn" data-diseaseID="{{$row->diseaseID}}" data-disease_name="{{$row->disease_name}}" data-disease_description="{{$row->disease_description}}" 
+                           data-disease_tag="{{$row->disease_tag}}"
+                           data-tips="{{$row->tips}}" data-toggle="modal" data-target="#ediModal">
                                 <i class="fa fa-edit"></i>
                             </a>
                             <a href="{{action('Admin\Disease\DiseaseController@del',['diseaseID' => $row->diseaseID])}}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
@@ -50,6 +52,21 @@
 
 @section('script')
     <script type="text/javascript">
-    
+        $(function () {
+            $('.ediBtn').click(function () {
+                var diseaseID = $(this).data('diseaseID');
+                var disease_name = $(this).data('disease_name');
+                var disease_description = $(this).data('disease_description');
+                var disease_tag = $(this).data('disease_tag');
+                var tips = $(this).data('tips');
+
+                $('#ediForm [name=diseaseID]').val(diseaseID);
+                $('#ediForm [name=disease_name]').val(disease_name);
+                $('#ediForm [name=disease_description]').val(disease_description);
+                $('#ediForm [name=disease_tag]').val(disease_tag);
+                $('#ediForm [name=tips]').val(tips);
+
+            });
+        });
     </script>
 @endsection
