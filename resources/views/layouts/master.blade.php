@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>MD</title>
+		<title>@yield('title')</title>
 		<!--Favicon-->	
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 		<!-- Fontawesome css -->
@@ -32,17 +33,25 @@
 	</head>
 
 	<body>
-		<!-- Scroll Top -->
+		
+		@include('shared.user.header')
+	
 		@yield('content')
+		
+		@include('shared.user.footer')
 		 <!-- Placed at the end of the document so the pages load faster -->
-		<script type="text/javascript" src="{{asset('public/assets/js/jquery-1.12.4.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/bootstrap.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/owl.carousel.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/css/bicon.min.css')}}assets/js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/onepagenav.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/isotope.pkgd.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/wow.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/main.js')}}"></script>
-		<script type="text/javascript" src="{{asset('public/assets/js/holder.min.js')}}"></script>
-	</body>
+
+    <!-- LinkUp Js -->
+      <script type="text/javascript" src="assets/js/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/js/popper.min.js"></script>
+      <script type="text/javascript" src="assets/js/onepagenav.js"></script>
+      <script type="text/javascript" src="assets/js/isotope.js"></script>
+      <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="assets/js/waypoints.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+      <script type="text/javascript" src="assets/js/wow.min.js"></script>
+      <script type="text/javascript" src="assets/js/ityped.min.js"></script>
+      <script type="text/javascript" src="assets/js/active.js"></script> 
+   </body>
 </html>

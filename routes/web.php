@@ -10,12 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//home View
+Route::get('index', 'MainController@index');
+//Symtoms View
+Route::get('symptoms', 'SymptomController@index');
 
-Route::get('/', function () {
-    return view('main');
-});
 
 Route::get('admin', 'Admin\AdminController@index');
+
+
 
 Route::get('age', 'Admin\Age\AgeController@index');
 Route::post('age/save', 'Admin\Age\AgeController@save');
