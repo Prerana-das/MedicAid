@@ -8,5 +8,5 @@ class Age extends Model
 {
     protected $table = 'ages';
     protected $primaryKey = 'ageID';
-    protected $fillable = ['age'];
+    protected $fillable = ['age','userID'];
 }

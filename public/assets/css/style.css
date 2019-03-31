@@ -180,11 +180,12 @@ a.border-btn:hover{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	text-align:center
+	text-align:center;
 }
 .banner_content h3 {
 	text-align: center;
 	margin-bottom: 41px;
+	color: #fff;
 }
 .banner_content span {
 	color: #fd5f42e6;

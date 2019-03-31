@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSymptomsTable extends Migration
+class CreateSpecialistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,16 @@ class CreateSymptomsTable extends Migration
      */
     public function up()
     {
-        Schema::create('symptoms', function (Blueprint $table) {
-            $table->bigIncrements('symptomID');
-            $table->string('symptom_name',200);
+        Schema::create('specialists', function (Blueprint $table) {
+            $table->bigIncrements('specialistID');
+             $table->string('specialist_name',200);
+
+            $table->unsignedBigInteger('diseaseID')->index()->nullable();
+            $table->foreign('diseaseID')->references('diseaseID')->on('diseases')->onDelete('cascade')->onUpdate('No Action');
 
             $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
+
             $table->timestamps();
         });
     }
@@ -30,6 +34,6 @@ class CreateSymptomsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('symptoms');
+        Schema::dropIfExists('specialists');
     }
 }

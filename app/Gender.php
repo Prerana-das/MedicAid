@@ -8,5 +8,5 @@ class Gender extends Model
 {
     protected $table = 'genders';
     protected $primaryKey = 'genderID';
-    protected $fillable = ['gender_name'];
+    protected $fillable = ['gender_name','userID'];
 }

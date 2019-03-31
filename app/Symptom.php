@@ -8,5 +8,5 @@ class Symptom extends Model
 {
     protected $table = 'symptoms';
     protected $primaryKey = 'symptomID';
-    protected $fillable = ['symptom_name'];
+    protected $fillable = ['symptom_name','userID'];
 }

@@ -17,6 +17,7 @@ class CreateAgesTable extends Migration
             $table->bigIncrements('ageID');
             $table->integer('age');
 
+            $table->unsignedBigInteger('userID')->index()->nullable();
             $table->foreign('userID')->references('id')->on('users')->onDelete('cascade')->onUpdate('No Action');
             $table->timestamps();
         });
