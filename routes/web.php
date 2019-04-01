@@ -40,6 +40,10 @@ Route::post('disease/save', 'Admin\Disease\DiseaseController@save');
 Route::post('disease/edit', 'Admin\Disease\DiseaseController@edit');
 Route::get('disease/del/{diseaseID}', 'Admin\Disease\DiseaseController@del');
 
+
+Route::get('specialist', 'Admin\Specialist\SpecialistController@index');
+Route::post('specialist/save', 'Admin\Specialist\SpecialistController@save');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

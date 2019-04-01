@@ -16,6 +16,7 @@
                     <li><a href="{{action('Admin\Gender\GenderController@index')}}"><i class="fab fa-accusoft"></i>Gender</a></li>
                     <li><a href="{{action('Admin\Symptom\SymptomController@index')}}"><i class="far fa-bookmark"></i>Symptoms</a></li>
                     <li><a href="{{action('Admin\Disease\DiseaseController@index')}}"><i class="fas fa-book-open"></i>Diseases</a></li>
+                    <li><a href="{{action('Admin\Specialist\SpecialistController@index')}}"><i class="fas fa-book-open"></i>Specialist</a></li>
                     <li><a href=""><i class="fas fa-users"></i>All Users</a></li>
                 </ul>
             </div>
